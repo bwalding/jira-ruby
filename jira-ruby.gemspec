@@ -18,9 +18,10 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  # Rubtime Dependencies
+  # Runtime Dependencies
   s.add_runtime_dependency 'oauth', '~> 0.5', '>= 0.5.0'
   s.add_runtime_dependency 'activesupport'
+  s.add_runtime_dependency 'multipart-post'
 
   # Development Dependencies
   s.add_development_dependency 'railties'
